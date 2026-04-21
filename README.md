@@ -15,7 +15,7 @@ The core trading algorithm focused on the Nifty 50 Index.
   * Expiry-Day Time Locks (halts trading at 2:45 PM on Tuesdays to avoid gamma decay traps).
   * 3:30 PM End-of-Day automatic square-off sequence.
 
-### 2. The Live F&O Scanner (`live_scanner.py`)
+### 2. The Live F&O Scanner (`live_scannerfo.py`)
 A background intelligence gatherer tracking the broader equity market.
 * **WebSocket Management:** Subscribes to 180+ premium F&O stocks simultaneously.
 * **Dual-Layer Filtering:** Automatically purges stocks below ₹200 to protect API rate limits and avoid illiquid/high-lot-size traps.
